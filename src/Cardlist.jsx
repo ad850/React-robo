@@ -4,17 +4,17 @@ import Card from './Card'
 
 
 
-const Cardlist  = () => {
+const Cardlist = ({ List}) => {
 
 
     return (
         <>
-           
+
 
             {
-                List.map((props) => {
+                List.map((List) => {
 
-                    return (<  Card name={props.name} key={props.id} email={props.email} id={props.id} />)
+                    return (<Card name={List.name} key={List.id} email={List.email} id={List.id} />)
 
 
 
